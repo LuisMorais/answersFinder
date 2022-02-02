@@ -1,0 +1,161 @@
+/* #main{
+    display: grid;
+    padding: 0px 150px;
+    width: 100vw;
+    gap: 25px;
+    grid-template-columns: auto 25%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'recent-posts category'
+                         'recent-posts top-users';
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+aside{
+    border: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+.sidebar{
+    max-width: 25%;
+    margin-left: 2%;
+}
+
+#category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+#recent-posts{
+    width: 75%;
+    padding: 2%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+
+.post{
+    width: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 2px solid #1a3250;
+}
+
+.post h1{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-div-title{
+    margin: 0 10px;
+}
+
+.sub-div-title p{
+    font-size: 14px;
+}
+
+.sub-div-comments{
+    margin: 0 10px;
+}
+
+.sub-div-comments p{
+    font-size: 14px;
+}
+
+
+.margin-auto{
+    margin-right: auto;
+}
+
+.img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #555;
+}
+
+.category-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
+    word-break: break-all;
+}
+
+.category-form input{
+    border-radius: 50%;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+    border: 1px solid grey;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.category-form input:checked {
+    background-color: #fff;
+    border: .5em solid #1a3250;
+}
+
+.background-title{
+    background-color: #1a3250;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 1px;
+}
+.background-title > h3{
+    margin: 0;
+}
+
+
+.filter{
+    margin-top: 25px;
+}
+
+@media(max-width: 750px){
+    .sidebar{
+        display: none;
+    }
+}
+
+@media(max-width: 750px){
+    .img{
+        display: none;
+    }
+    .post{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #recent-posts{
+        width: 90%;
+    }
+    .sub-div-comments{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 500px){
+    #recent-posts{
+        width: 100%;
+    }
+}

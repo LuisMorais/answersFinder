@@ -1,0 +1,23 @@
+.mobileNav{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    padding: 20px;
+    background-color: rgba(26, 50, 80, 0.9);
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+@media(min-width: 750px){
+    .mobileNav{
+        display: none;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <title>Answers Finder</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="logo">
+            Answers Finder
+        </h1>
+        <form class='search-form'>
+            <input type="text" class='search-bar' placeholder="Pesquisar perguntas...">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+        </form>
+        <div class='header-buttons'>
+            <button class="btn btn-desktop">entrar</button>
+            <button class="btn btn-desktop">cadastre-se</button>
+        </div>
+    </header>
+    <main id='main'>
+        <section id='recent-posts'>
+            <article class='post'>
+                <div class='img'></div>
+                <div class='margin-auto sub-div-title'>
+                    <h1>Como ganhar na mega-sena?</h1>
+                    <p>Gabriel Nunes</p>
+                </div>
+                <div class='sub-div-comments'>
+                    <p>19:30h</p>
+                    <p>250 Comentários</p>
+                </div>
+            </article>
+        </section>
+        
+        <div class="sidebar">
+        <aside id="category">
+            <div class="background-title"><h3>Categorias</h3></div>
+            <form class='category-form'>
+                <label>
+                    <input type="checkbox" name="esporte" value="esporte"/>
+                    Esportes
+                </label>
+                <label>
+                    <input type="checkbox" name="fitness" value="fitness"/>
+                    Fitness
+                </label>
+                <label>
+                    <input type="checkbox" name="relacionamento" value="relacionamento"/>
+                    Relacionamentos
+                </label>
+                <label>
+                    <input type="checkbox" name="tecnologia" value="tecnologia"/>
+                    Tecnologia
+                </label>
+                <label>
+                    <input type="checkbox" name="viagem" value="viagem"/>
+                    Viagens
+                </label>
+                <button class="btn filter">Filtrar</button>
+            </form>
+        </aside>
+        
+        <aside id='top-users'>
+            <h3 class="background-title"> Top Usuarios </h3>
+            
+        </aside>
+    </div>
+    </main>
+    <nav class='mobileNav'>
+        <button class='search-btn'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+        </button>
+        <button class='search-btn'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </button>
+        <button class='search-btn'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+    </nav>
+</body>
+
+</html>
