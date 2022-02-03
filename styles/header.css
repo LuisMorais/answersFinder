@@ -10,9 +10,11 @@
     margin-bottom: 60px;
 }
 
-#logo{
+.logo{
+    font-size: 1.7rem;
     color: #fff; 
     font-family: 'Abril Fatface', cursive;
+    text-decoration: none;
 }
 
 .search-form{
