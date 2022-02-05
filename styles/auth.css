@@ -54,7 +54,7 @@ label{
     color: #2d568a;
 }
 
-.username, .password{
+.input{
     padding: 5px;
     margin: 15px;
     border: none;
@@ -64,7 +64,7 @@ label{
     
 }
 
-.username:focus, .password:focus{
+input:focus{
     border-bottom: 1px solid #2d568a;
 }
 
@@ -129,4 +129,31 @@ label{
 
 .sign-up-redirect a:hover{
     color: #427ac1;
+}
+
+@media(max-width: 499px){
+    .container-login{
+        width: 350px;
+    }
+    .logo-login{
+        font-size: 1.5rem;
+    }
+    .input{
+        margin: 10px;
+    }
+}
+
+@media(max-width: 350px){
+    .container-login{
+        width: 100%;
+    }
+    .logo-login{
+        font-size: 1.2rem;
+    }
+    .input{
+        margin: 5px;
+    }
+    .auth-btn{
+        padding: 10px 100px;
+    }
 }
