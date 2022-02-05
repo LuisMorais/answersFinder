@@ -69,7 +69,7 @@ input:focus{
 }
 
 .input-field{
-    width: 250px;
+    min-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,18 +80,28 @@ input:focus{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    max-width: 250px;
     color: #333;
+    margin-top: 15%;
+}
+
+.login-form{
+    width: 250px;
+}
+
+.sign-form{
+    min-width: 250px;
 }
 
 .auth-btn{
-    padding: 10px 50%;
+    padding: 10px 125px;
     margin-top: 25px;
     color: #fff;
     background-color: #2d568a;
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    box-sizing: content-box;
+    min-width: 90px;
     transition: background-color .5s;
 }
 
@@ -125,6 +135,7 @@ input:focus{
     color: #2d568a;
     cursor: pointer;
     transition: color .5s;
+    text-decoration: none;
 }
 
 .sign-up-redirect a:hover{
@@ -141,6 +152,9 @@ input:focus{
     .input{
         margin: 10px;
     }
+    .auth-btn{
+        padding: 10px 100px;
+    }
 }
 
 @media(max-width: 350px){
@@ -154,6 +168,9 @@ input:focus{
         margin: 5px;
     }
     .auth-btn{
-        padding: 10px 100px;
+        padding: 10px 75px;
+    }
+    .input-field{
+        font-size: .8rem;
     }
 }
