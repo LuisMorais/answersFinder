@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <title>Answers Finder</title>
 </head>
@@ -21,20 +26,28 @@
             Answers Finder
         </a>
         <form class='search-form'>
-            <input type="text" class='search-bar' placeholder="Pesquisar perguntas...">
+            <input type="text" class='search-bar' placeholder="Pesquisar por perguntas...">
             <button class="search-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1a3250" viewBox="0 0 16 16">
                     <path
                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                 </svg>
             </button>
         </form>
         <div class='header-buttons'>
-            <button class="btn btn-desktop">entrar</button>
-            <button class="btn btn-desktop">cadastre-se</button>
+            <a href="/login"><button class="btn btn-desktop">ENTRAR</button></a>
+            <a href="/signup"><button class="btn btn-desktop">CADASTRE-SE</button></a>
         </div>
     </header>
+
     <main id='main'>
+        <div class="search-category">
+            <div class="search-nav green-bg"><p>Esporte</p> <i class="fa-solid fa-futbol"></i></div>
+            <div class="search-nav orange-bg"><p>Fitness</p> <i class="fa-solid fa-dumbbell"></i> </div>
+            <div class="search-nav red-bg"><p>Relacionamentos</p> <i class="fa-solid fa-heart"></i></div>
+            <div class="search-nav grey-bg"><p>Tecnologia</p> <i class="fa-solid fa-desktop"></i></div>
+            <div class="search-nav blue-bg"><p>Viagens</p><i class="fa-solid fa-plane"></i></div>
+        </div>
         <section id='recent-posts'>
             <article class='post'>
                 <div class='img'></div>
@@ -48,41 +61,8 @@
                 </div>
             </article>
         </section>
-        
-        <div class="sidebar">
-        <aside id="category">
-            <div class="background-title"><h3>Categorias</h3></div>
-            <form class='category-form'>
-                <label>
-                    <input type="checkbox" name="esporte" value="esporte"/>
-                    Esportes
-                </label>
-                <label>
-                    <input type="checkbox" name="fitness" value="fitness"/>
-                    Fitness
-                </label>
-                <label>
-                    <input type="checkbox" name="relacionamento" value="relacionamento"/>
-                    Relacionamentos
-                </label>
-                <label>
-                    <input type="checkbox" name="tecnologia" value="tecnologia"/>
-                    Tecnologia
-                </label>
-                <label>
-                    <input type="checkbox" name="viagem" value="viagem"/>
-                    Viagens
-                </label>
-                <button class="btn filter">Filtrar</button>
-            </form>
-        </aside>
-        
-        <aside id='top-users'>
-            <h3 class="background-title"> Top Usuarios </h3>
-            
-        </aside>
-    </div>
     </main>
+    
     <nav class='mobileNav'>
         <button class='search-btn'>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
