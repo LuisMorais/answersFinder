@@ -108,8 +108,6 @@ i{
 #recent-posts{
     width: 100%;
     padding: 5%;
-    border: 1px solid lightgrey;
- 
 }
 
 
@@ -118,7 +116,9 @@ i{
     display: flex;
     align-items: center;
     margin-top: 10px;
-    border-top: 2px solid #1a3250;
+    border-radius: 25px;
+    background-color: #d7e4ff;
+    border: 1px solid lightgray;
 }
 
 .post h1{
