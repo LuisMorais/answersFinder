@@ -48,12 +48,23 @@
         <form action="" class="form-question">
             <label for="">
                 <p>Titulo:</p>
-                <input class="title" type="text">
+                <input class="title" type="text" placeholder="Digite o título da pergunta aqui..." required>
             </label>
             <label for="">
-                <p>Digite aqui sua pergunta:</p><textarea class="input-text" type="text"></textarea>
+                <p>Digite aqui sua pergunta:</p><textarea required minlength="20" rows="10" class="input-text" type="text" placeholder="Elabore sua dúvida aqui..."></textarea>
             </label>
-            
+            <label>
+                <p>Categoria:</p>
+                <select required class="category">
+                    <option>Esporte</option>
+                    <option>Fitness</option>
+                    <option>Relacionamento</option>
+                    <option>Informática</option>
+                    <option>Viagem</option>
+                </select>
+
+                <button class="form-btn">Perguntar</button>
+            </label>
         </form>
     </main>
 

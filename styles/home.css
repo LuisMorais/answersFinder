@@ -69,6 +69,7 @@
 }
 .top-user h1{
     font-size: 20px;
+    font-weight: normal;
 }
 
 
@@ -167,7 +168,7 @@ i{
     max-height: 150px;
     margin-bottom: 15px;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: #f8f9fa;
     border: 1px solid lightgray;
 }
 
@@ -251,22 +252,7 @@ i{
     border-bottom: 1px solid lightgray;
     justify-content: flex-end
 }
-
-.btn{
-    background-color: #228635;
-    border-radius: 5px;
-    color: #fff;
-    padding: 9px;
-    border: none;
-    cursor: pointer;
-    transition: all .5s;
-}
-
-.btn:hover{
-    background-color: #2aa541;
-}
-
-
+s
 .filter{
     margin-top: 25px;
 }

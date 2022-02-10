@@ -4,6 +4,8 @@
 
 html, body{
     margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #343a40;
 }
 
 body{
@@ -27,4 +29,46 @@ a{
     margin: 0 auto;
     padding: 0 15px;
     gap: 30px;
+}
+
+.btn{
+    background-color: #228635;
+    border-radius: 5px;
+    color: #fff;
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn:hover{
+    background-color: #2aa541;
+}
+
+.form-btn{
+    padding: 10px 125px;
+    margin-top: 25px;
+    color: #fff;
+    background-color: #2d568a;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-sizing: content-box;
+    width: fit-content;
+    transition: background-color .5s;
+}
+
+.form-btn:disabled{
+    opacity: .7;
+    cursor: default;
+}
+
+.form-btn:disabled:hover{
+    opacity: .7;
+    cursor: default;
+    background-color: #2d568a;
+}
+
+.form-btn:hover{
+    background-color: #427ac1;
 }

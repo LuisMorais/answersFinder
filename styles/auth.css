@@ -26,7 +26,7 @@ body{
     position: absolute;
     top: 0;
     color: #ffffff;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Dancing script', cursive;
     letter-spacing: 8px;
     text-decoration: none;
     font-size: 2.5rem;
@@ -90,34 +90,6 @@ input:focus{
 
 .sign-form{
     min-width: 250px;
-}
-
-.auth-btn{
-    padding: 10px 125px;
-    margin-top: 25px;
-    color: #fff;
-    background-color: #2d568a;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    box-sizing: content-box;
-    min-width: 90px;
-    transition: background-color .5s;
-}
-
-.auth-btn:disabled{
-    opacity: .7;
-    cursor: default;
-}
-
-.auth-btn:disabled:hover{
-    opacity: .7;
-    cursor: default;
-    background-color: #2d568a;
-}
-
-.auth-btn:hover{
-    background-color: #427ac1;
 }
 
 .sign-up-redirect{

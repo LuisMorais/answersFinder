@@ -21,7 +21,7 @@
 
 .search-form{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 400px;
 }
@@ -32,10 +32,15 @@
     color: #1a3250;
     padding: 6px 20px;
     margin-right: 5px;
-    border: none;
+    border: 1px solid rgba(0,0,0,0);
     outline: none;
     text-align: center;
     font-size: 16px;
+    transition: all .5s;
+}
+
+.search-bar:focus{
+    border-bottom: 1px solid #444;
 }
 
 .header-buttons{
