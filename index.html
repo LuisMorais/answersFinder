@@ -12,14 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <title>Answers Finder</title>
 </head>
+
 <body>
     <header class="header">
         <a href='/' class="logo">
@@ -35,38 +38,125 @@
             </button>
         </form>
         <div class='header-buttons'>
-            <a href="/login"><button class="btn btn-desktop">ENTRAR</button></a>
-            <a href="/signup"><button class="btn btn-desktop">CADASTRE-SE</button></a>
+            <a href="/login"><button class="header-btn btn-desktop">ENTRAR</button></a>
+            <a href="/cadastrar"><button class="header-btn btn-desktop">CADASTRE-SE</button></a>
         </div>
+
     </header>
 
     <main id='main'>
+    <div class="container-topuser">
+                    <p class="section-title">Top Usuários</p>  
+                    <div class='top-user'>
+                        <div class='img'></div>
+                        <div>
+                            <h1> User 1 </h1>
+                            <p>20 Posts</p>
+                        </div>
+                    </div>
+                    <div class='top-user'>
+                        <div class='img'></div>
+                        <div>
+                            <h1> User 2 </h1>
+                            <p>20 Posts</p>
+                        </div>
+                    </div>
+                    <div class='top-user'>
+                        <div class='img'></div>
+                        <div>
+                            <h1> User 3 </h1>
+                            <p>20 Posts</p>
+                        </div>
+                    </div>
+                    <div class='top-user'>
+                        <div class='img'></div>
+                        <div>
+                            <h1> User 4 </h1>
+                            <p>20 Posts</p>
+                        </div>
+                    </div>
+                    <div class='top-user'>
+                        <div class='img'></div>
+                        <div>
+                            <h1> User  5</h1>
+                            <p>20 Posts</p>
+                        </div>
+                    </div>
+                    <div class='top-user'>
+                        <div class='img'></div>
+                        <div>
+                            <h1> User 6 </h1>
+                            <p>20 Posts</p>
+                        </div>
+                    </div>
+
+    </div>
+
+
         <div class="search-category">
-            <div class="search-nav green-bg"><p>Esporte</p> <i class="fa-solid fa-futbol"></i></div>
-            <div class="search-nav orange-bg"><p>Fitness</p> <i class="fa-solid fa-dumbbell"></i> </div>
-            <div class="search-nav red-bg"><p>Relacionamentos</p> <i class="fa-solid fa-heart"></i></div>
-            <div class="search-nav grey-bg"><p>Tecnologia</p> <i class="fa-solid fa-desktop"></i></div>
-            <div class="search-nav blue-bg"><p>Viagens</p><i class="fa-solid fa-plane"></i></div>
+            <div class="search-nav green-bg">
+                <p>Esporte</p> <i class="fa-solid fa-futbol"></i>
+            </div>
+            <div class="search-nav orange-bg">
+                <p>Fitness</p> <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <div class="search-nav red-bg">
+                <p>Relacionamentos</p> <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="search-nav grey-bg">
+                <p>Tecnologia</p> <i class="fa-solid fa-desktop"></i>
+            </div>
+            <div class="search-nav blue-bg">
+                <p>Viagens</p><i class="fa-solid fa-plane"></i>
+            </div>
         </div>
+        <div class="btn-div">
+          <a href="nova-pergunta"><button class="btn">Faça sua pergunta</button> </a> 
+        </div>
+        
         <section id='recent-posts'>
+            <p class="section-title">Perguntas recentes</p>  
             <article class='post'>
-                <div class='img'></div>
-                <div class='margin-auto sub-div-title'>
-                    <h1> Titulo </h1>
-                    <p>Autor</p>
+                <div class="sub-div">
+                    <div class='img'></div>
+                    <div>
+                        <h1> Titulo </h1>
+                        <p>Autor</p>
+                    </div>
+                    <div class='sub-div-comments'>
+                        <p>Horario</p>
+                        <p>Comentários</p>
+                    </div>
                 </div>
-                <div class='sub-div-comments'>
-                    <p>Horario</p>
-                    <p>Comentários</p>
+                <div class="sub-div description-div">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quia laudantium consequuntur nihil ex odio maxime, consectetur deserunt asperiores aspernatur! Dolor accusantium cupiditate nemo fugit at est distinctio, deleniti dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
             </article>
+            <article class='post'>
+                <div class="sub-div">
+                    <div class='img'></div>
+                    <div>
+                        <h1> Titulo </h1>
+                        <p>Autor</p>
+                    </div>
+                    <div class='sub-div-comments'>
+                        <p>Horario</p>
+                        <p>Comentários</p>
+                    </div>
+                </div>
+                <div class="sub-div description-div">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quia laudantium consequuntur nihil ex odio maxime, consectetur deserunt asperiores aspernatur! Dolor accusantium cupiditate nemo fugit at est distinctio, deleniti dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </article>
+        
         </section>
     </main>
-    
+
     <nav class='mobileNav'>
         <button class='search-btn'>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
             </svg>
         </button>
         <button class='search-btn'>
@@ -77,7 +167,8 @@
         </button>
         <button class='search-btn'>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
         </button>
     </nav>

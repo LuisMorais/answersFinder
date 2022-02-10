@@ -42,7 +42,7 @@
     display: flex;
 }
 
-.btn{
+.header-btn{
     background-color: #32609a;
     color: #fff;
     margin: 0px 4px;
@@ -56,7 +56,7 @@
     transition: background-color .5s;
 }
 
-.btn:hover{
+.header-btn:hover{
     background-color:#5387c7;
 }
 
