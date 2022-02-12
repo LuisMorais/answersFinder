@@ -1,0 +1,79 @@
+main{
+    width: 100%;
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-perfil{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 300px;
+    margin: auto auto;
+}
+
+.capa-user{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(197, 203, 255);
+}
+
+.img-profile{
+    position: absolute;
+    top: 15px;
+    left: 3%;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #555;
+}
+.user-profile{
+    position: absolute;
+    top: 45px;
+    left: 150px;
+}
+.user-profile p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.post-info{
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    width: 100%;
+    display: flex;
+}
+
+.post-info p{
+    background-color: #228635;
+    color: #fff;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+
+.info-profile{
+    position: absolute;
+    top: 150px; 
+    padding:2px 40px;
+    width:  100%;
+    height: 90%;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.info-profile p{
+    margin: 5px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.btn-profile{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}

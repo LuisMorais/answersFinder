@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/mobile.css">
+    <link rel="stylesheet" href="../styles/profile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
@@ -43,50 +44,29 @@
         </div>
 
     </header>
-
-    <main id='main'>
-        <form action="" class="form-question">
-            <label for="">
-                <p>Titulo:</p>
-                <input class="title" type="text" placeholder="Digite o título da pergunta aqui..." required>
-            </label>
-            <label for="">
-                <p>Digite aqui sua pergunta:</p><textarea required minlength="20" rows="10" class="input-text" type="text" placeholder="Elabore sua dúvida aqui..."></textarea>
-            </label>
-            <label>
-                <p>Categoria:</p>
-                <select required class="category">
-                    <option>Esporte</option>
-                    <option>Fitness</option>
-                    <option>Relacionamento</option>
-                    <option>Informática</option>
-                    <option>Viagem</option>
-                </select>
-
-                <button class="form-btn">Perguntar</button>
-            </label>
-        </form>
+    <main>
+        <div class="container-perfil">
+            <div>
+                <div class="capa-user"></div>
+                <div class="img-profile"></div>
+                <div class="user-profile"><p>Luís Fernando</p></div>
+            </div> 
+            <div class="post-info">
+                    <p>Tópicos:0</p>
+                    <p>Postagens:0</p>
+                    <p>Gostaram:10</p>
+            </div>
+            <div class="info-profile" >
+                <div>
+                <p>Nome:</p>
+                <p>Email:</p>
+                <p>Senha: *****</p>  
+                </div>
+                
+            </div>
+            <button class="form-btn btn-profile">Alterar perfil</button>
+        </div>
+        
     </main>
-
-    <nav class='mobileNav'>
-        <button class='search-btn'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
-                <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-            </svg>
-        </button>
-        <button class='search-btn'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 16 16">
-                <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-        </button>
-        <button class='search-btn'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-            </svg>
-        </button>
-    </nav>
 </body>
 </html>
