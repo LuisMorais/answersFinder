@@ -2,10 +2,6 @@ main{
     width: 100%;
     height: 100%;
 }
-*{
-    padding: 0;
-    margin: 0;
-}
 
 .container-perfil{
     position: relative;
@@ -39,6 +35,7 @@ main{
 .user-profile p{
     font-size: 24px;
     font-weight: bold;
+    margin: 0;
 }
 .post-info{
     position: absolute;
@@ -76,4 +73,49 @@ main{
     position: absolute;
     left: 30px;
     bottom: 20px;
+}
+
+@media(max-width: 600px){
+    .container-perfil{
+        width: 450px;
+    }
+    .post-info p{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 450px){
+    .container-perfil{
+        width: 350px;
+    }
+    .post-info{
+        left: 3%;
+    }
+    .post-info p{
+        font-size: 0.8rem;
+    }
+    .user-profile{
+        top: 30px;
+        left: 100px;
+    }
+    .user-profile p{
+        font-size: 1.3rem;
+    }
+    .btn-profile{
+        padding: 10px 35px;
+    }
+    .img-profile{
+        top: 3px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(max-width: 350px){
+    .container-perfil{
+        width: 300px;
+    }
+    .user-profile p{
+        font-size: 1.1rem;
+    }
 }
