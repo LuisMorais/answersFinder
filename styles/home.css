@@ -14,15 +14,13 @@
     box-sizing: border-box;
 }
 #main{
-    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    max-width: 950px;
     margin: 0 auto;
     padding: 0 15px;
-    gap: 30px;
+    gap: 15px;
 }
 
 
@@ -36,9 +34,11 @@
 }
 .container-topuser{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
+    min-width: 150px;
+    width: 150px;
     margin-bottom: 20px;
     gap: 10px;
     padding: 10px;
@@ -50,7 +50,6 @@
 .section-title{
     position: absolute;
     top: -25px;
-    left: 0;
     color: #555;
 }
 
@@ -73,11 +72,23 @@
     font-weight: normal;
 }
 
+.swiper-container{
+    width: 100%;
+    position: relative;
+}
+
+.swiper {
+    display: block;
+    width: 100%;
+}
+
+.swiper-slide{
+    margin-bottom: 20px;
+}
 
 .search-category{
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -89,7 +100,7 @@
     justify-content: center;
     align-items: center;
     width: 156px;
-    height: 96px;
+    height: 85px;
     gap: 15px;
     border-top: 2px solid rgba(0, 0, 0, 0.575) ;
     transition: all .3s;
@@ -151,12 +162,14 @@ i{
     transition: all .3s;
 }
 
-
 #recent-posts{
-    width: 80%;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
+}
+
+.recent-topics{
+    flex-grow: 1;
 }
 
 
@@ -166,7 +179,6 @@ i{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    max-height: 150px;
     margin-bottom: 15px;
     border-radius: 25px;
     background-color: #f8f9fa;
@@ -247,11 +259,11 @@ i{
 }
 
 .btn-div{
-    width: 80%;
+    width: 95%;
     display: flex;
     padding-bottom: 10px;
-    border-bottom: 1px solid lightgray;
-    justify-content: flex-end
+    justify-content: flex-end;
+    margin: 0 auto;
 }
 s
 .filter{
@@ -259,29 +271,44 @@ s
 }
 
 @media(max-width: 750px){
-    .sidebar{
-        display: none;
-    }
-}
-
-@media(max-width: 750px){
-    .img{
-        display: none;
-    }
     .post{
         flex-direction: column;
         align-items: flex-start;
     }
-    #recent-posts{
-        width: 90%;
+    .description-div{
+        display: none;
+    }
+    #main{
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .search-category{
+        display: none;
     }
 }
 
-@media(max-width: 500px){
-    #recent-posts{
+@media(max-width: 550px){
+    #main{
+        flex-direction: column;
+    }
+    .recent-topics{
         width: 100%;
     }
-    .description-div{
+    .container-topuser{
+        flex-direction: row;
+        width: 100%;
+    }
+    .top-user{
+        width: 25%;
+    }
+    .container-topuser{
+        display: none;
+    }
+}
+
+@media(min-width: 550px){
+    .swiper-container{
         display: none;
     }
 }
