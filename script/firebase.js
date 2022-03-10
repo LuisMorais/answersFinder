@@ -1,9 +1,6 @@
 // Import the functions you need from the SDKs you need
 
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js'
-
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"
-
 // TODO: Add SDKs for Firebase products that you want to use
 
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -17,7 +14,7 @@ const firebaseConfig = {
 
   authDomain: "answer-finder-fa3f9.firebaseapp.com",
   
-  databaseURL: "https://answer-finder.firebaseio.com",
+  databaseURL: "https://answer-finder-fa3f9-default-rtdb.firebaseio.com/",
 
   projectId: "answer-finder-fa3f9",
 
@@ -33,4 +30,3 @@ const firebaseConfig = {
 // Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
-export const database = getDatabase(app)
