@@ -30,13 +30,13 @@ function verifyIsEmpty(isEmpty, fields) {
     }, false)
 }
 
-function getLoginFields() {
+export function getLoginFields() {
     const email = document.querySelector('#username')
     const password = document.querySelector('#password')
     return [email, password]
 }
 
-function getSignupFields() {
+export function getSignupFields() {
     const email = document.querySelector('#email')
     const password = document.querySelector('#password')
     const confirmPassword = document.querySelector('#confirm-password')
