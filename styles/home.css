@@ -23,6 +23,36 @@
     gap: 15px;
 }
 
+.username{
+    position: relative;
+    cursor: pointer;
+}
+
+.username i{
+    margin-right: 3px;
+}
+
+.usermenu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.usermenu div, a{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.usermenu div:hover, a:hover{
+    background-color: #ddd;
+}
+
 
 
 /*Top users */
@@ -284,6 +314,9 @@ s
         justify-content: space-between;
     }
     .search-category{
+        display: none;
+    }
+    .username{
         display: none;
     }
 }
