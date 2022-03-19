@@ -49,24 +49,29 @@
             <div>
                 <div class="capa-user"></div>
                 <div class="img-profile"></div>
-                <div class="user-profile"><p>Luís Fernando</p></div>
-            </div> 
-            <div class="post-info">
-                    <p>Tópicos:0</p>
-                    <p>Postagens:0</p>
-                    <p>Gostaram:10</p>
-            </div>
-            <div class="info-profile" >
-                <div>
-                <p>Nome:</p>
-                <p>Email:</p>
-                <p>Senha: *****</p>  
+                <div class="user-profile">
+                    <p id="username-title"></p>
                 </div>
-                
             </div>
-            <button class="form-btn btn-profile">Alterar perfil</button>
+            <div class="post-info">
+                <p id="topics">Tópicos:0</p>
+                <p id="posts">Postagens:0</p>
+                <p id="stars">Gostaram:10</p>
+            </div>
+            <div class="info-profile" id="info-profile">
+                <div>
+                    <p id="username">Nome:</p>
+                    <p id="email">Email:</p>
+                    <p id="password">Senha: *****</p>
+                </div>
+
+            </div>
+            <button class="form-btn btn-profile" id="btn-alter">Alterar perfil</button>
         </div>
-        
+
     </main>
 </body>
+<script src="../script/firebase.js" type="module"></script>
+<script src="../script/profile/profile.js" type="module"></script>
+
 </html>

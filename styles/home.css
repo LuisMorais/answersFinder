@@ -41,7 +41,7 @@
     border-radius: 10px;
 }
 
-.usermenu div, a{
+.usermenu div, .usermenu a{
     height: 40px;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@
     border-radius: 10px;
 }
 
-.usermenu div:hover, a:hover{
+.usermenu div:hover, .usermenu a:hover{
     background-color: #ddd;
 }
 

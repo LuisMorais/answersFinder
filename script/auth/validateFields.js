@@ -1,22 +1,20 @@
 window.addEventListener('load', () => {
     const isEmpty = [true, true, true, true]
-    let isEqual = true
     const button = document.querySelector('#button')
 
     const fields = location.pathname.includes('login') ? getLoginFields() : getSignupFields()
 
 
     fields.forEach((element, i) => {
+        element.value = ''
         element.addEventListener('input', (event) => {
             if (event.target.value.length > 0) isEmpty[i] = false
             else isEmpty[i] = true
             const isArrayTrue = verifyIsEmpty(isEmpty, fields)
             if (isArrayTrue) {
                 button.disabled = true
-            } else if(isEqual) {
+            } else {
                 button.disabled = false
-            }else{
-                button.disabled = true
             }
         })
     })

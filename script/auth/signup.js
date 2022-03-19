@@ -25,10 +25,13 @@ document.querySelector('#form').addEventListener('submit', (e) => {
             set(ref(database, 'users/' + user.uid), {
               userName,
               email,
+              posts: 0,
+              topics: 0,
+              stars: 0,
               last_login: Date.now()
             });
 
-            location.href = 'http://127.0.0.1:5500'
+            //location.href = 'http://127.0.0.1:5500'
 
 
           })

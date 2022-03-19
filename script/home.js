@@ -1,24 +1,19 @@
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js";
 import { ref, getDatabase, onValue } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"
+import {isAuthenticated} from './functions.js'
 
 document.body.onload = () => {
-    const auth = getAuth()
-    const db = getDatabase();
+    isAuthenticated(setUsername)
+}
 
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            removeAuthLinks()
-            const uid = user.uid
-            return onValue(ref(db, '/users/' + uid), (snapshot) => {
-                const username = (snapshot.val() && snapshot.val().userName) || 'Anonymous'
-                setProfileLink(username)
-            }, {
-                onlyOnce: false
-            })
-        } else {
-            console.log('blabla')
-        }
-
+function setUsername(user, db) {
+    removeAuthLinks()
+    const uid = user.uid
+    return onValue(ref(db, '/users/' + uid), (snapshot) => {
+        const username = (snapshot.val() && snapshot.val().userName) || 'Anonymous'
+        setProfileLink(username)
+    }, {
+        onlyOnce: true
     })
 }
 
@@ -58,7 +53,7 @@ function setProfileLink(username) {
 
 function setLogout(elem) {
     const auth = getAuth();
-    
+
     elem.addEventListener('click', () => {
         signOut(auth).then(() => {
             location.href = 'http://127.0.0.1:5500'
